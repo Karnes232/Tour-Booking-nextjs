@@ -13,11 +13,16 @@ const AboutUsSection = () => {
     const responsive = {
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 4,
+          items: 3,
+          slidesToSlide: 1 // optional, default to 1.
+        },
+        tabletLandscape: {
+          breakpoint: { max: 1024, min: 821 },
+          items: 3,
           slidesToSlide: 1 // optional, default to 1.
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
+          breakpoint: { max: 821, min: 464 },
           items: 1,
           slidesToSlide: 1 // optional, default to 1.
         },
@@ -29,7 +34,7 @@ const AboutUsSection = () => {
       };
   return (
     <div className='flex flex-col mt-10'>
-        <h1 className='flex justify-center my-1 text-xl font-bold font-sans mb-8'>Why book with us?</h1>
+        <h1 className='flex justify-center my-1 text-xl font-bold font-sans mb-8 lg:text-3xl xl:text-5xl'>Why book with us?</h1>
 
 
         <Carousel
@@ -51,32 +56,32 @@ const AboutUsSection = () => {
             dotListClass="custom-dot-list-style"
             itemClass=""
         >
-            <div className='w-screen h-[30vh] md:h-[20vh] flex items-center flex-col'>
-                <CashIcon className='h-8 text-green-600'/>
-                <h2 className='mt-4 text-lg font-semibold font-sans'>Ultimate flexibility</h2>
-                <p className='w-[76vw] mt-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maiores, fugit molestiae laborum quae id commodi vero accusantium laboriosam corrupti nihil eligendi quasi officiis.</p>
+            <div className='aboutDiv'>
+                <CashIcon className='!h-8 text-green-600'/>
+                <h2 className='aboutH2'>Ultimate flexibility</h2>
+                <p className='aboutParagraph'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maiores, fugit molestiae laborum quae id commodi vero accusantium laboriosam corrupti nihil eligendi quasi officiis.</p>
        
             </div>
-            {/* <div className='w-screen h-[30vh] flex items-center flex-col'>
+            <div className='aboutDiv'>
                 <EmojiHappyIcon className='h-8 text-emerald-700'/>
-                <h2 className='mt-4 text-lg font-semibold font-sans'>Memorable experiences</h2>
-                <p className='w-[76vw] mt-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maiores, fugit molestiae laborum quae id commodi vero accusantium laboriosam corrupti nihil eligendi quasi officiis dafda.</p>
+                <h2 className='aboutH2'>Memorable experiences</h2>
+                <p className='aboutParagraph'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maiores, fugit molestiae laborum quae id commodi vero accusantium laboriosam corrupti nihil eligendi quasi officiis dafda.</p>
        
             </div>
 
-            <div className='w-screen h-[30vh] flex items-center flex-col'>
+            <div className='aboutDiv'>
                 <ClipboardListIcon className='h-8 text-violet-400'/>
-                <h2 className='mt-4 text-lg font-semibold font-sans'>Quality at our core</h2>
-                <p className='w-[76vw] mt-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maiores, fugit molestiae laborum quae id commodi vero accusantium laboriosam i officiis.</p>
+                <h2 className='aboutH2'>Quality at our core</h2>
+                <p className='aboutParagraph'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maiores, fugit molestiae laborum quae id commodi vero accusantium laboriosam i officiis.</p>
        
             </div>
 
-            <div className='w-screen h-[30vh] flex items-center flex-col'>
+            <div className='aboutDiv'>
                 <AcademicCapIcon className='h-8 text-violet-600'/>
-                <h2 className='mt-4 text-lg font-semibold font-sans'>Award-winning support</h2>
-                <p className='w-[76vw] mt-4'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maiores, fugit molestiae laborum quae id commodi </p>
+                <h2 className='aboutH2'>Award-winning support</h2>
+                <p className='aboutParagraph'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia maiores, fugit molestiae laborum quae id commodi </p>
        
-            </div> */}
+            </div>
 
         </Carousel>
 

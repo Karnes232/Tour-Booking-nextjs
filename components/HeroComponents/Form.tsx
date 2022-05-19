@@ -9,7 +9,9 @@ const Form = () => {
     const [selectedDate, handleDateChange] = useState(new Date());
     const date = moment(selectedDate).format('MMMM Do YYYY')
     return (
-        <form className='bg-white rounded-lg w-80 h-48 opacity-75 p-5 flex flex-col mx-5'>
+
+        
+        <form className='bg-white rounded-lg w-80 h-48 opacity-75 p-5 flex flex-col mx-5 max-w-6xl xl:'>
             <h1 className='font-sans p-1 font-semibold text-lg'>Find your greatest experience</h1>
 
             <SearchBar />
@@ -22,6 +24,7 @@ const Form = () => {
             
             
         </form>
+       
   )
 }
 

@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+
+    .aboutDiv {
+        @apply w-screen h-[30vh] md:h-[30vh] flex items-center flex-col lg:h-[35vh] xl:h-[30vh]
+    }
+
+    .aboutH2 {
+        @apply mt-4 text-lg font-semibold font-sans
+    }
+
+    .aboutParagraph {
+        @apply w-[76vw] mt-4 md:w-[30vw] lg:w-[22vw];
+    }
+
+}
