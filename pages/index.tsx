@@ -4,6 +4,8 @@ import Image from 'next/image'
 import AboutUsSection from '../components/AboutUsSection'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
+import LoginBanner from '../components/LoginBanner'
+import Recommended from '../components/Recommended'
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +19,11 @@ const Home: NextPage = () => {
       
       <Hero />
 
-    <AboutUsSection />
+      <AboutUsSection />
+
+      <LoginBanner />
+
+      <Recommended />
     </div>
   )
 }
