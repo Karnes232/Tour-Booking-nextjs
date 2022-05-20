@@ -47,19 +47,23 @@ const Hero = () => {
             itemClass=""
         >
             <div className='w-screen h-[65vh] md:h-[40vh] lg:h-[25vw] flex justify-center items-center md:justify-between xl:justify-center xl:-mx-[26rem]'>
-                <Image src={hero1} alt='hero1'
-                    layout='fill'
-                    objectFit='cover'
-                    objectPosition='50% 80%'
-                    className='opacity-75 grayscale-[10%]'
-                />
+                <div>
+                    <Image src={hero1} alt='hero1'
+                        layout='fill'
+                        objectFit='cover'
+                        objectPosition='50% 80%'
+                        className='opacity-75 grayscale-[10%]'
+                        priority
+                    />
+                </div>
+                
              
                     <Form />
                     
                 
                 
             </div>
-            {/* <div className='w-screen h-[65vh] md:h-[40vh] lg:h-[25vw] flex justify-center items-center md:justify-between'>
+            <div className='w-screen h-[65vh] md:h-[40vh] lg:h-[25vw] flex justify-center items-center md:justify-between xl:justify-center xl:-mx-[26rem]'>
                 <Image src={hero2} alt='hero2'
                     layout='fill'
                     objectFit='cover'
@@ -68,7 +72,7 @@ const Hero = () => {
                 />
                 <Form/>
             </div>
-            <div className='w-screen h-[65vh] md:h-[40vh] lg:h-[25vw] flex justify-center items-center md:justify-between'>
+            <div className='w-screen h-[65vh] md:h-[40vh] lg:h-[25vw] flex justify-center items-center md:justify-between xl:justify-center xl:-mx-[26rem]'>
                 <Image src={hero3} alt='hero3'
                     layout='fill'
                     objectFit='cover'
@@ -76,7 +80,7 @@ const Hero = () => {
                     className='opacity-75 grayscale-[10%]'
                 />
                 <Form/>
-            </div>  */}
+            </div> 
         </Carousel>
     )
 }

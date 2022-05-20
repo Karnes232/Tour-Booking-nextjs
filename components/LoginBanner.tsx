@@ -7,11 +7,11 @@ const LoginBanner = () => {
         <div className="backgroundImage bg-opacity-70 mt-8 h-[20vh] md:hidden flex flex-col justify-center ">
             {session ? (
                 <>
-                    <h1 className='flex justify-center text-2xl font-medium font-sans mb-8 text-center mx-auto w-5/6'>
+                    <h1 className='flex justify-center text-2xl font-medium font-sans mb-8 text-center mx-auto w-3/4'>
                         Top Rated Tours are Waiting for You
                     </h1>
                     <button 
-                        className='p-3 bg-blue-500 rounded-lg text-white w-4/6 mx-auto' 
+                        className='px-3 py-1.5 bg-blue-500 rounded-lg text-white w-3/5 mx-auto' 
                         // onClick={(event: React.MouseEvent<HTMLElement>) => {signIn()}}
                     >
                         Book a Tour Now
@@ -24,7 +24,7 @@ const LoginBanner = () => {
                         Log in to Book Faster
                     </h1>
                     <button 
-                        className='p-3 bg-blue-500 rounded-lg text-white w-4/6 mx-auto' 
+                        className='px-3 py-1.5 bg-blue-500 rounded-lg text-white w-3/5 mx-auto' 
                         onClick={(event: React.MouseEvent<HTMLElement>) => {signIn()}}
                     >
                         Sign in
