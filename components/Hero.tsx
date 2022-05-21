@@ -39,14 +39,15 @@ const Hero = () => {
             autoPlay={false}
             autoPlaySpeed={5000}
             keyBoardControl={true}
-            customTransition="all .5"
+            customTransition="transform 1500ms ease-in-out"
             transitionDuration={500}
             containerClass="carousel-container"
             // removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
             dotListClass="custom-dot-list-style"
             itemClass=""
+            shouldResetAutoplay={false}
         >
-            <div className='w-screen h-[65vh] md:h-[40vh] lg:h-[25vw] flex justify-center items-center md:justify-between xl:justify-center xl:-mx-[26rem]'>
+            <div className='w-screen h-[65vh] md:h-[40vh] lg:h-[25vw] flex justify-center items-center lg:-mx-[20rem] xl:-mx-[26rem]'>
                 <div>
                     <Image src={hero1} alt='hero1'
                         layout='fill'

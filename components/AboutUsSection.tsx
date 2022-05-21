@@ -28,7 +28,7 @@ const AboutUsSection = () => {
         }
       };
   return (
-    <div className='flex flex-col mt-10'>
+    <div className='flex flex-col mt-10 max-w-6xl mx-auto'>
         <h1 className='flex justify-center my-1 text-xl font-bold font-sans mb-8 lg:text-3xl xl:text-5xl'>Why book with us?</h1>
 
 
@@ -44,7 +44,7 @@ const AboutUsSection = () => {
             autoPlay={false}
             autoPlaySpeed={5000}
             keyBoardControl={true}
-            customTransition="all .5"
+            customTransition=""
             transitionDuration={500}
             containerClass="carousel-container"
             // removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}

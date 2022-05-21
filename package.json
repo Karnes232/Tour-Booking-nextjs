@@ -18,12 +18,17 @@
     "next-auth": "^4.3.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-multi-carousel": "^2.8.0",
+    "react-star-ratings": "^2.3.0",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
+    "@faker-js/faker": "^6.3.1",
+    "@ngneat/falso": "^5.3.0",
     "@types/node": "17.0.4",
     "@types/react": "17.0.38",
+    "@types/react-star-ratings": "^2.3.0",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",

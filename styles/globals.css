@@ -5,7 +5,7 @@
 @layer components {
 
     .aboutDiv {
-        @apply w-screen h-[30vh] md:h-[30vh] flex items-center flex-col lg:h-[35vh] xl:h-[30vh]
+        @apply w-screen h-[30vh] md:h-[30vh] flex items-center flex-col lg:h-[35vh] xl:h-[35vh] max-w-6xl mx-auto
     }
 
     .aboutH2 {
@@ -13,7 +13,7 @@
     }
 
     .aboutParagraph {
-        @apply w-[76vw] mt-4 md:w-[30vw] lg:w-[22vw];
+        @apply w-[76vw] mt-4 md:w-[30vw] lg:w-[22vw] xl:w-[19vw];
     }
 
     .backgroundImage {
@@ -24,4 +24,8 @@
         url('/hero/hero-1.jpg');
     }
 
+    .footerIcons {
+        @apply text-white h-7 w-7 cursor-pointer
+    }
+    
 }
