@@ -1,12 +1,14 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
-import AboutUsSection from '../components/AboutUsSection'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import LoginBanner from '../components/LoginBanner'
-import Recommended from '../components/Recommended'
+import AboutUsSection from '../components/AboutUsComponents/AboutUsSection'
+import Footer from '../components/FooterComponets/Footer'
+
+import Header from '../components/HeaderComponets/Header'
+import Hero from '../components/HeroComponents/Hero'
+import LoginBanner from '../components/LoginBannerComponents/LoginBanner'
+
+import Recommended from '../components/RecommededComponents/Recommended'
 
 const Home: NextPage = () => {
   return (

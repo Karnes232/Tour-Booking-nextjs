@@ -3,10 +3,10 @@ import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import hero1 from '../public/hero/hero-1.jpg'
-import hero2 from '../public/hero/hero-2.jpg'
-import hero3 from '../public/hero/hero-3.jpg'
-import Form from './HeroComponents/Form';
+import hero1 from '../../public/hero/hero-1.jpg'
+import hero2 from '../../public/hero/hero-2.jpg'
+import hero3 from '../../public/hero/hero-3.jpg'
+import Form from './Form';
 
 const Hero = () => {
     const responsive = {

@@ -1,6 +1,6 @@
 import React from 'react'
-import Buttons from './HeaderComponets/Buttons'
-import Logo from './HeaderComponets/Logo'
+import Buttons from './Buttons'
+import Logo from './Logo'
 
 const Header = () => {
   return (

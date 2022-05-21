@@ -1,7 +1,8 @@
 import { useSession } from 'next-auth/react'
 import React from 'react'
-import LoggedIn from './LoginBannerComponents/LoggedIn'
-import SignIn from './LoginBannerComponents/SignIn'
+import LoggedIn from './LoggedIn'
+import SignIn from './SignIn'
+
 
 const LoginBanner = () => {
     const { data: session } = useSession()

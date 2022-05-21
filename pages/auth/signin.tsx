@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { getProviders, signIn as SignIntoProvider } from 'next-auth/react'
 import Image from 'next/image'
-import Header from '../../components/Header'
+import Header from '../../components/HeaderComponets/Header'
 
 const signIn: NextPage = ({ providers }: any) => {
   return (

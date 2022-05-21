@@ -6,7 +6,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import { randNumber, randAddress, randCompanyName, randFloat  } from '@ngneat/falso';
 import { faker } from '@faker-js/faker';
-import Tour from './RecommededComponents/Tour';
+import Tour from './Tour';
 
 interface tour {
   id: number;

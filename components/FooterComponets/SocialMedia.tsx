@@ -1,13 +1,11 @@
-import { useRouter } from 'next/router';
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
 import { FaFacebookF, FaTwitter, FaPinterestP, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 
 const SocialMedia = () => {
-    const router = useRouter()
     return (
-        <div className='border-b border-gray-500'>
-            <div className='flex py-4 justify-between mx-8'>
+        <div className='border-b border-gray-500 md:border-none'>
+            <div className='flex py-4 justify-between mx-8 md:max-w-md md:mx-auto'>
                 <Link href="https://www.facebook.com/">
                     <a>
                         <FaFacebookF 
@@ -15,26 +13,41 @@ const SocialMedia = () => {
                         />
                     </a>
                 </Link>
-                <FaTwitter 
-                    className='footerIcons'
-                    onClick={() => router.push('https://twitter.com/')}
-                />
-                <FaPinterestP 
-                    className='footerIcons'
-                    onClick={() => router.push('https://www.pinterest.com/')}
-                />
-                <FaInstagram 
-                    className='footerIcons'
-                    onClick={() => router.push('https://instagram.com/')}
-                />
-                <FaYoutube 
-                    className='footerIcons'
-                    onClick={() => router.push('https://youtube.com/')}
-                />
-                <FaTiktok 
-                    className='footerIcons'
-                    onClick={() => router.push('https://www.tiktok.com/')}
-                />
+                <Link href="https://twitter.com/">
+                    <a>
+                        <FaTwitter 
+                            className='footerIcons'
+                        />
+                    </a>
+                </Link>
+                <Link href='https://www.pinterest.com/'>
+                    <a>
+                        <FaPinterestP 
+                            className='footerIcons'
+                        />
+                    </a>
+                </Link>
+                <Link href='https://instagram.com/'>
+                    <a>
+                        <FaInstagram 
+                            className='footerIcons'
+                        />
+                    </a>
+                </Link>
+                <Link href='https://youtube.com/'>
+                    <a>
+                        <FaYoutube 
+                            className='footerIcons'
+                        />
+                    </a>
+                </Link>
+                <Link href='https://www.tiktok.com/'>
+                    <a>
+                        <FaTiktok 
+                            className='footerIcons'
+                        />
+                    </a>
+                </Link>
             </div>
         </div>
     )

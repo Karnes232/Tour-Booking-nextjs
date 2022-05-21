@@ -28,4 +28,8 @@
         @apply text-white h-7 w-7 cursor-pointer
     }
     
+    .footerSitemap {
+        @apply text-white cursor-pointer my-0.5
+    }
+    
 }
