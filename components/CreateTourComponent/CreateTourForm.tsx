@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const CreateTourForm = () => {
+  const [tourName, setTourName] = useState('')
+  const [city, setCity] = useState('')
+  const [country, setCountry] = useState('')
+  const [price, setPrice] = useState('')
+  const [description, setDescription] = useState('')
+
   return (
     <div className="mx-auto mt-5 grid max-w-6xl grid-cols-2 gap-6">
       <div></div>
-      <form action="" method="post" className="space-y-3">
-        <label htmlFor="name" className="block">
+      <div className="space-y-3">
+        <label htmlFor="tourName" className="block">
           <span className="ml-2 text-gray-700">Tour Name</span>
           <input
             type="text"
-            id="name"
+            id="tourName"
+            value={tourName}
+            onChange={(e) => setTourName(e.target.value)}
             className="form-input
                     mt-1
                     block
@@ -27,6 +35,8 @@ const CreateTourForm = () => {
           <input
             type="text"
             id="city"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
             className="form-input
                     mt-1
                     block
@@ -44,6 +54,8 @@ const CreateTourForm = () => {
           <input
             type="text"
             id="country"
+            value={country}
+            onChange={(e) => setCountry(e.target.value)}
             className="form-input
                     mt-1
                     block
@@ -62,6 +74,8 @@ const CreateTourForm = () => {
             <input
               type="number"
               id="price"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
               className="form-input
                     mt-1
                     block
@@ -87,8 +101,7 @@ const CreateTourForm = () => {
             <input
               type="file"
               id="photo"
-              className="
-                hidden"
+              className="hidden"
             />
           </label>
         </div>
@@ -97,17 +110,12 @@ const CreateTourForm = () => {
           <textarea
             id="description"
             name="description"
-            className="form-textarea
-          mt-1
-                    block
-                    w-full
-                    rounded-md
-                    border-transparent
-                    bg-gray-100
-                    focus:border-gray-500 focus:bg-white focus:ring-0"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            className="form-textarea mt-1 block w-full rounded-md border-transparent bg-gray-100 focus:border-gray-500 focus:bg-white focus:ring-0"
           />
         </label>
-      </form>
+      </div>
     </div>
   )
 }
