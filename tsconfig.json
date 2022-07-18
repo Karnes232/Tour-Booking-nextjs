@@ -15,6 +15,12 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/HeroComponents/CustomDatePicker.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/HeroComponents/CustomDatePicker.jsx",
+    "components/layout.js"
+  ],
   "exclude": ["node_modules"]
 }

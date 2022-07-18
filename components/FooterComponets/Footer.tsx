@@ -6,16 +6,15 @@ import SocialMedia from './SocialMedia'
 
 const Footer = () => {
   return (
-    <div className='shadow-sm border-b bg-gray-800 mt-8'>
-        <div className='flex flex-col justify-between max-w-6xl mx-5 xl:mx-auto'>
-            <SocialMedia/>
-            <Sitemap />
-            <div className='flex flex-col justify-between md:flex-row'>
-              <AppStore />
-              <Copyright/>
-            </div> 
-            
+    <div className="mt-8 border-b bg-gray-800 shadow-sm">
+      <div className="mx-5 flex max-w-6xl flex-col justify-between xl:mx-auto">
+        <SocialMedia />
+        <Sitemap />
+        <div className="flex flex-col justify-between md:flex-row">
+          <AppStore />
+          <Copyright />
         </div>
+      </div>
     </div>
   )
 }

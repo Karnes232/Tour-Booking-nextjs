@@ -3,33 +3,32 @@
 @tailwind utilities;
 
 @layer components {
+  .aboutDiv {
+    @apply mx-auto flex h-[30vh] w-screen max-w-6xl flex-col items-center md:h-[30vh] lg:h-[35vh] xl:h-[35vh];
+  }
 
-    .aboutDiv {
-        @apply w-screen h-[30vh] md:h-[30vh] flex items-center flex-col lg:h-[35vh] xl:h-[35vh] max-w-6xl mx-auto
-    }
+  .aboutH2 {
+    @apply mt-4 font-sans text-lg font-semibold;
+  }
 
-    .aboutH2 {
-        @apply mt-4 text-lg font-semibold font-sans
-    }
+  .aboutParagraph {
+    @apply mt-4 w-[76vw] md:w-[30vw] lg:w-[22vw] xl:w-[19vw];
+  }
 
-    .aboutParagraph {
-        @apply w-[76vw] mt-4 md:w-[30vw] lg:w-[22vw] xl:w-[19vw];
-    }
+  .backgroundImage {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.4)
+      ),
+      url('/hero/hero-1.jpg');
+  }
 
-    .backgroundImage {
-        background-image: linear-gradient(
-        to right bottom, 
-        rgba(255, 255, 255, 0.9), 
-        rgba(255, 255, 255, 0.4)), 
-        url('/hero/hero-1.jpg');
-    }
+  .footerIcons {
+    @apply h-7 w-7 cursor-pointer text-white;
+  }
 
-    .footerIcons {
-        @apply text-white h-7 w-7 cursor-pointer
-    }
-    
-    .footerSitemap {
-        @apply text-white cursor-pointer my-0.5
-    }
-    
+  .footerSitemap {
+    @apply my-0.5 cursor-pointer text-white;
+  }
 }
