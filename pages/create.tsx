@@ -3,7 +3,7 @@ import { useSession } from 'next-auth/react'
 
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import CreateTourForm from '../components/CreateTourComponent/CreateTourForm'
+import CreateTourMain from '../components/CreateTourComponent/CreateTourMain'
 
 import Hero from '../components/HeroComponents/Hero'
 import Layout from '../components/layout'
@@ -21,7 +21,7 @@ const Create: NextPage = () => {
       {session ? (
         <Layout>
           <Hero />
-          <CreateTourForm />
+          <CreateTourMain />
         </Layout>
       ) : (
         <></>

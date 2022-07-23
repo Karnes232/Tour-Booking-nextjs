@@ -89,8 +89,8 @@ const Recommended = () => {
         dotListClass="custom-dot-list-style"
         itemClass=""
       >
-        {tours.map((tour: tour) => (
-          <Tour tour={tour} />
+        {tours.map((tour: tour, index: number) => (
+          <Tour tour={tour} key={index} />
         ))}
       </Carousel>
     </div>
