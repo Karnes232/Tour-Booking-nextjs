@@ -5,10 +5,7 @@ import 'react-multi-carousel/lib/styles.css'
 
 import Tour from './Tour'
 
-
-const Recommended = ({tours}: any) => {
-  
-
+const Recommended = ({ tours }: any) => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1280 },
@@ -31,6 +28,7 @@ const Recommended = ({tours}: any) => {
       slidesToSlide: 1, // optional, default to 1.
     },
   }
+
   return (
     <div className="mx-auto mt-10 flex max-w-6xl flex-col">
       <h1 className="my-1 mb-8 flex justify-center font-sans text-xl font-bold lg:text-3xl xl:text-5xl">

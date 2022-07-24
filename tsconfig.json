@@ -21,7 +21,8 @@
     "**/*.tsx",
     "components/HeroComponents/CustomDatePicker.jsx",
     "components/layout.js",
-    "pages/index.jsx"
-, "pages/tours/[id].jsx"  ],
+    "pages/index.jsx",
+    "pages/tours/[id].jsx"
+  ],
   "exclude": ["node_modules"]
 }

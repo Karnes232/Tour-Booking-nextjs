@@ -17,12 +17,13 @@ const Home = () => {
     const fetchData = async () => {
       const querySnapshot = await getDocs(collection(db, 'tours'))
       querySnapshot.forEach((doc) => {
-        setTours((tours) => [...tours, doc.data()])
+        let data = doc.data()
+        data.id = doc.id
+        setTours((tours) => [...tours, data])
       })
     }
     fetchData().catch(console.error)
   }, [])
-
   return (
     <Layout>
       <Hero />

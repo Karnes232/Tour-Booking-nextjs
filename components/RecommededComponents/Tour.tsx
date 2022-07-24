@@ -4,11 +4,12 @@ import Image from 'next/image'
 import StarRatings from 'react-star-ratings'
 
 import { GlobeIcon } from '@heroicons/react/outline'
-
+import { useRouter } from 'next/router'
 
 const Tour = ({ tour }: any) => {
+  const router = useRouter()
   return (
-    <div className="relative m-4 ml-[12.5rem] flex h-[35vh] w-[70vw] flex-col md:-ml-20 md:w-[35vw] lg:w-[30vw] xl:m-0 xl:w-[14rem]">
+    <div onClick={() => router.push(`/tours/${tour.id}`)} className="relative m-4 ml-[12.5rem] flex h-[35vh] w-[70vw] flex-col md:-ml-20 md:w-[35vw] lg:w-[30vw] xl:m-0 xl:w-[14rem] cursor-pointer">
       <div className="relative h-[25vh] w-[70vw] md:w-[35vw] lg:w-[25vw] xl:w-[14rem]">
         <Image
           src={tour.image}
@@ -17,14 +18,13 @@ const Tour = ({ tour }: any) => {
           objectFit="cover"
           objectPosition=""
           className="rounded-2xl"
-        /> 
+        />
       </div>
 
-      <p className="ml-2 mt-2 flex items-center truncate text-gray-500 text-xs">
-        <GlobeIcon className="mr-2 w-5 h-5" />
-        {tour.city}, <br/> {tour.country}
+      <p className="ml-2 mt-2 flex items-center truncate text-xs text-gray-500">
+        <GlobeIcon className="mr-2 h-5 w-5" />
+        {tour.city}, <br /> {tour.country}
       </p>
-     
 
       <h5 className="my-1 truncate text-lg font-semibold capitalize">
         {tour.tourName}
